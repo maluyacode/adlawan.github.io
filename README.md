@@ -1,2 +1,1 @@
-# PracMySite
-Personal site
+# Personal Site
