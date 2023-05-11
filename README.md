@@ -1,2 +1,2 @@
 # PracMySite
-Practice 
+Personal site
