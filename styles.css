@@ -267,7 +267,6 @@ main {
 }
 
 
-
 @media only screen and (min-width: 800px) {
     #welcome-section {
         grid-template-columns: repeat(2, 1fr);
@@ -277,6 +276,12 @@ main {
 
     #projects {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #navbar {
+        overflow-x: hidden;
     }
 }
 
