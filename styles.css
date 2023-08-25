@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,300;1,400;1,600&display=swap');
+
+:root {
+    --dark-color: #272829;
+    --dark-bluish: #61677A;
+    --white-color: #D8D9DA;
+    --wheat-color: #FFF6E0;
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100svw;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    overflow-x: hidden;
+    width: 100svw;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+#header {
+    width: 100svw;
+    position: fixed;
+    height: 75px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #272829;
+    z-index: 3;
+}
+
+#navbar {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+#navbar a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 5px 30px;
+    color: var(--white-color);
+    width: fit-content;
+    height: fit-content;
+    transition: 500ms ease-out;
+}
+
+#navbar a:hover {
+    transform: scale(1.2);
+    background: #9597981e;
+}
+
+
+main {
+    height: 100svh;
+}
+
+#welcome-section {
+    display: grid;
+    grid-template-areas:
+        'myname'
+        'myimage';
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    height: 100svh;
+}
+
+.left-section {
+    grid-area: myname;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+.left-section * {
+    text-align: center;
+}
+
+.left-section h1 {
+    font-size: 6rem;
+    font-weight: 400;
+    cursor: default
+}
+
+.left-section p {
+    font-size: 4rem;
+    font-weight: 300;
+    cursor: default
+}
+
+.my-image {
+    object-fit: contain;
+    grid-area: myimage;
+    max-width: 55%;
+    min-width: 100px;
+    padding: 10px;
+    border-radius: 71% 29% 70% 30% / 30% 48% 52% 70%;
+    border: none;
+    /* background: linear-gradient(280deg, var(--wheat-color) 10%, var(--dark-bluish) 50%, var(--white-color) 70%, #FF6969 80%); */
+    background-color: #FF6969;
+    animation: image-border 8s ease-in-out infinite;
+    padding: 30px;
+}
+
+#projects {
+    display: grid;
+    gap: 5px;
+    margin-bottom: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.project-tile a {
+    transition: transform 500ms ease-out, cursor 500ms ease-out;
+    display: block;
+    cursor: default;
+}
+
+.project-tile {
+    transition: transform 500ms ease-out;
+}
+
+.project-tile:hover {
+    transform: scale(1.1);
+    /* Scale the element on hover */
+}
+
+.project-tile a img {
+    width: min(90%, 500px);
+    /* height: min(200px, ); */
+}
+
+#project-header {
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    padding-top: 150px;
+}
+
+#projects * {
+    font-size: 2rem;
+    font-weight: 200;
+    text-decoration: none;
+    color: var(--white-color);
+    text-align: center;
+}
+
+#contacts {
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    padding-top: 125px;
+}
+
+#contact-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 50px;
+    padding-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+#contact-section a {
+    font-size: 2rem;
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 300;
+    transition: 300ms ease-out;
+}
+
+#contact-section a:hover {
+    transform: translateY(-5px);
+
+}
+
+#contact-section-botoom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+#pro-contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#pro-contact h3,
+#pro-contact p {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#pro-contact h3 {
+    font-weight: normal;
+}
+
+#pro-contact p {
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+
+#message-me {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+#message-me label {
+    font-size: 2rem;
+}
+
+#message-me textarea {
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: Poppins, sans-serif;
+}
+
+#message-me input {
+    font-size: 1.5rem;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: Poppins, sans-serif;
+}
+
+#message-me button {
+    background-color: var(--dark-bluish);
+    color: var(--white-color);
+    width: 20%;
+    padding: 5px;
+    border: none;
+    margin-top: 10px;
+    font-size: 2rem;
+    border-radius: 5px;
+    font-family: Poppins, sans-serif;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#message-me button:active {
+    border: none;
+}
+
+
+
+@media only screen and (min-width: 800px) {
+    #welcome-section {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            'myname myimage';
+    }
+
+    #projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #welcome-section {
+        padding-top: 100px;
+    }
+
+    h1 {
+        font-size: 4rem !important;
+    }
+
+    p {
+        font-size: 3rem !important;
+    }
+
+    #pro-contact p {
+        font-size: 2rem !important;
+    }
+
+    #message-me {
+        width: 80%;
+    }
+
+    #projects{
+        width: min(100%, 500px);
+        /* height: min(200px, ); */
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    #header {
+        display: none;
+    }
+
+    #pro-contact p {
+        font-size: 1.5rem !important;
+    }
+}
+
+@keyframes image-border {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        background: linear-gradient(45deg, #88D5BF 0%, #5D6BF8 100%);
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+        background: linear-gradient(45deg, #88D5BF 0%, #5D6BF8 100%);
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        background: linear-gradient(45deg, #88D5BF 0%, #5D6BF8 100%);
+    }
+}
