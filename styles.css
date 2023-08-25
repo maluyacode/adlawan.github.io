@@ -301,18 +301,18 @@ main {
         width: 80%;
     }
 
-    #projects{
+    #projects {
         width: min(100%, 500px);
         /* height: min(200px, ); */
         margin: auto;
     }
+
+    #navbar {
+        overflow-x: scroll;
+    }
 }
 
 @media only screen and (max-width: 350px) {
-    #header {
-        display: none;
-    }
-
     #pro-contact p {
         font-size: 1.5rem !important;
     }
