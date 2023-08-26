@@ -176,7 +176,8 @@ main {
     display: flex;
     justify-content: center;
     padding: 20px;
-    gap: 50px;
+    row-gap: 20px;
+    column-gap: 50px;
     padding-bottom: 100px;
     flex-wrap: wrap;
 }
@@ -187,6 +188,21 @@ main {
     text-decoration: none;
     font-weight: 300;
     transition: 300ms ease-out;
+}
+
+#contact-section a i {
+    font-size: 5rem;
+    text-decoration: none;
+    font-weight: 300;
+    transition: 300ms ease-out;
+}
+
+.fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    /* Also define standard property for compatibility */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #contact-section a:hover {
@@ -320,6 +336,23 @@ main {
 @media only screen and (max-width: 350px) {
     #pro-contact p {
         font-size: 1.5rem !important;
+    }
+
+    #project-header {
+        padding-top: 60px;
+    }
+
+    .my-image {
+        margin-top: -40px;
+    }
+
+    #contacts,
+    #project-header {
+        font-size: 3rem !important;
+    }
+
+    #project-title {
+        font-size: 2rem !important;
     }
 }
 
