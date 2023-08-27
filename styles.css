@@ -28,6 +28,22 @@ body {
     font-size: 10px;
 }
 
+.burger {
+    width: 40px;
+    height: 40px;
+    font-size: 3rem;
+    border-radius: 2px;
+    border: none;
+    color: #272829;
+    background: linear-gradient(45deg, #88D5BF 0%, #5D6BF8 100%);
+    z-index: 200;
+    cursor: pointer;
+    position: fixed;
+    left: 2%;
+    top: 2%;
+}
+
+
 #header {
     width: 100svw;
     position: fixed;
@@ -45,6 +61,7 @@ body {
     align-items: center;
     gap: 20px;
     justify-content: flex-start;
+    overflow-x: auto;
 }
 
 #navbar a {
@@ -63,6 +80,43 @@ body {
     background: #9597981e;
 }
 
+/* Not finished */
+#horizontalHeader {
+    position: absolute;
+    overflow: hidden;
+}
+
+#horizontalNavbar {
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+    background-color: #9597981e;
+    overflow: hidden;
+    align-items: center;
+    padding: 30px 30px;
+    padding-top: 100px;
+    height: 100svh;
+    width: 50%;
+}
+
+
+#horizontalNavbar a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 5px 30px;
+    color: var(--white-color);
+    width: fit-content;
+    height: fit-content;
+    transition: 500ms ease-out;
+}
+
+#horizontalNavbar a:hover {
+    transform: scale(1.2);
+    background: #9597981e;
+}
+
+/* Not finished */
 
 main {
     height: 100svh;
@@ -266,8 +320,8 @@ main {
 #message-me button {
     background-color: var(--dark-bluish);
     color: var(--white-color);
-    width: 20%;
-    padding: 5px;
+    width: fit-content;
+    padding: 5px 10px;
     border: none;
     margin-top: 10px;
     font-size: 2rem;
