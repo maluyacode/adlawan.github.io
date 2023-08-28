@@ -84,19 +84,22 @@ body {
 #horizontalHeader {
     position: absolute;
     overflow: hidden;
+    transition: 500ms ease-out;
 }
 
 #horizontalNavbar {
     display: flex;
     row-gap: 20px;
     flex-direction: column;
-    background-color: #9597981e;
+    background-color: #025883bd;
+    background: linear-gradient(45deg, #88d5bfd6 0%, #5d6af8d3 100%);
     overflow: hidden;
     align-items: center;
     padding: 30px 30px;
     padding-top: 100px;
     height: 100svh;
-    width: 50%;
+    width: 30%;
+    position: fixed;
 }
 
 
@@ -109,6 +112,7 @@ body {
     width: fit-content;
     height: fit-content;
     transition: 500ms ease-out;
+    z-index: 6;
 }
 
 #horizontalNavbar a:hover {
